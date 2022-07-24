@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { Navbar, Center, Tooltip, UnstyledButton, createStyles, Group } from '@mantine/core';
 import {
   Icon as TablerIcon,
-  Home2,
-  Gauge,
-  DeviceDesktopAnalytics,
-  Fingerprint,
-  CalendarStats,
+  Books,
+  BrandGithub,
+  BrandInstagram,
+  BrandLinkedin,
+  Pokeball,
   User,
-  Settings,
+  AddressBook,
   Logout,
   SwitchHorizontal,
 } from 'tabler-icons-react';
@@ -59,13 +59,13 @@ function NavbarLink({ icon: Icon, label, active, onClick }: NavbarLinkProps) {
 }
 
 const mockdata = [
-  { icon: Home2, label: 'Home' },
-  { icon: Gauge, label: 'Dashboard' },
-  { icon: DeviceDesktopAnalytics, label: 'Analytics' },
-  { icon: CalendarStats, label: 'Releases' },
-  { icon: User, label: 'Account' },
-  { icon: Fingerprint, label: 'Security' },
-  { icon: Settings, label: 'Settings' },
+  { icon: Pokeball, label: 'Home' },
+  { icon: BrandGithub, label: 'GitHub' },  
+  { icon: BrandLinkedin, label: 'LinkedIn' },
+  { icon: BrandInstagram, label: 'Instagram' },
+  { icon: Books, label: 'Resume' },
+  { icon: User, label: 'About' },
+  { icon: AddressBook, label: 'Contact' },
 ];
 
 export default function NavbarMinimal() {
