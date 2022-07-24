@@ -1,6 +1,6 @@
-import React from
+import React from 'react';
 
-export const About  = () => {
+export function About() {
     return(
         <section className='intro-design'>
           <div className='intro-to-me'>
