@@ -9,9 +9,8 @@ import {
   Pokeball,
   User,
   AddressBook,
-  Logout,
-  SwitchHorizontal,
 } from 'tabler-icons-react';
+
 
 
 const useStyles = createStyles((theme) => ({
@@ -81,7 +80,7 @@ export default function NavbarMinimal() {
   ));
 
   return (
-    <Navbar height={750} width={{ base: 80 }} p="md">
+    <Navbar height={450} width={{ base: 80 }} p="md">
       <Center>
 
       </Center>
@@ -90,12 +89,12 @@ export default function NavbarMinimal() {
           {links}
         </Group>
       </Navbar.Section>
-      <Navbar.Section>
+      {/* <Navbar.Section>
         <Group direction="column" align="center" spacing={0}>
           <NavbarLink icon={SwitchHorizontal} label="Change account" />
           <NavbarLink icon={Logout} label="Logout" />
         </Group>
-      </Navbar.Section>
+      </Navbar.Section> */}
     </Navbar>
   );
 }
