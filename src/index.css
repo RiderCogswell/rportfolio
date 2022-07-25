@@ -48,13 +48,10 @@ body {
 }
 
 .intro-to-me {
-  position: absolute;
-  top:40%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-  width: 50%;
   text-align: center;
   font-family: "Monaco";
   margin: 0 auto;
@@ -78,62 +75,6 @@ body {
 
 /* projects section */
 
-.section-title {
-  font-size: 48px;
-  color: var(--primary-color);
-  border-bottom: 3px solid var(--tertiary-color);
-  padding: 20px;
-  text-align: center;
-  margin: 0 auto 35px auto;
-  width: 50%;
-}
-
-.projects {
-  width: 100%;
-  margin: 0 auto;   
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.project-name a {
-  text-decoration: none;
-  color: var(--secondary-color);
-}
-
-.project {
-  flex: 1;
-  margin: 20px;
-  background: var(--tertiary-color);
-  border-radius: 15px;
-}
-
-.project img {
-  width: 100%;
-  border-radius: 15px;
-}
-
-.project:hover {
-  background: var(--hover-color);
-}
-
-.project-bio {
-  padding: 25px;
-  line-height: 1.3;
-  text-align: center;
-}
-
-.project-bio h3 {
-  font-size: 28px;
-  color: var(--secondary-color);
-}
-
-.project-bio h4 {
-  font-weight: lighter;
-  font-size: 22px;
-  margin-bottom: 15px;
-  color: var(--primary-color);
-}
 
 /* about me section */
 
@@ -189,23 +130,6 @@ body {
 .link {
   text-decoration: none;
   color: #a20e0e;
-}
-
-
-/* footer section */
-
-footer {
-  background: var(--primary-color);
-  width: 100%;
-  padding: 10px 35px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  color: var(--secondary-color);
-}
-
-.footer-cr {
-  line-height: 1.5;
 }
 
 /* media queries */
