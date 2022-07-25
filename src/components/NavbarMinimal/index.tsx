@@ -2,14 +2,12 @@ import React, { useState } from 'react';
 import { Navbar, Center, Tooltip, UnstyledButton, createStyles, Group } from '@mantine/core';
 import {
   Icon as TablerIcon,
-  Books,
   BrandGithub,
   BrandInstagram,
   BrandLinkedin,
   Home2,
   User,
   AddressBook,
-  Engine,
   School
 } from 'tabler-icons-react';
 import Icon from '../Icon'
@@ -62,12 +60,12 @@ function NavbarLink({ icon: Icon, label, active, onClick }: NavbarLinkProps) {
 
 const mockdata = [
   { icon: Home2, label: 'Home' },
-  { icon: BrandGithub, label: 'GitHub' },  
-  { icon: BrandLinkedin, label: 'LinkedIn' },
-  { icon: BrandInstagram, label: 'Instagram' },
-  { icon: Books, label: 'Resume' },
-  { icon: User, label: 'About' },
-  { icon: AddressBook, label: 'Contact' },
+  { icon: BrandGithub, label: 'GitHub', link: 'https://github.com/RiderCogswell' },  
+  { icon: BrandLinkedin, label: 'LinkedIn', link: 'https://www.linkedin.com/in/rider-cogswell-608086160/' },
+  { icon: BrandInstagram, label: 'Instagram', link: 'https://www.instagram.com/ridercogswell/' },
+  { icon: School, label: 'Resume', link: '' },
+  { icon: User, label: 'About', link: '#' },
+  { icon: AddressBook, label: 'Contact', link: '' },
 ];
 
 export default function NavbarMinimal() {
@@ -87,7 +85,7 @@ export default function NavbarMinimal() {
       <Center>
         <Icon />
       </Center>
-      <Navbar.Section grow mt={50}>
+      <Navbar.Section grow mt={20}>
         <Group direction="column" align="center" spacing={0}>
           {links}
         </Group>
