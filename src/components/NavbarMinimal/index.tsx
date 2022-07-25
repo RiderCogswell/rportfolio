@@ -6,10 +6,13 @@ import {
   BrandGithub,
   BrandInstagram,
   BrandLinkedin,
-  Pokeball,
+  Home2,
   User,
   AddressBook,
+  Engine,
+  School
 } from 'tabler-icons-react';
+import Icon from '../Icon'
 
 
 
@@ -58,7 +61,7 @@ function NavbarLink({ icon: Icon, label, active, onClick }: NavbarLinkProps) {
 }
 
 const mockdata = [
-  { icon: Pokeball, label: 'Home' },
+  { icon: Home2, label: 'Home' },
   { icon: BrandGithub, label: 'GitHub' },  
   { icon: BrandLinkedin, label: 'LinkedIn' },
   { icon: BrandInstagram, label: 'Instagram' },
@@ -82,7 +85,7 @@ export default function NavbarMinimal() {
   return (
     <Navbar height={450} width={{ base: 80 }} p="md">
       <Center>
-
+        <Icon />
       </Center>
       <Navbar.Section grow mt={50}>
         <Group direction="column" align="center" spacing={0}>
