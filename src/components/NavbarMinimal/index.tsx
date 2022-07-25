@@ -6,7 +6,7 @@ import {
   BrandInstagram,
   BrandLinkedin,
   Home2,
-  User,
+  UserCircle,
   AddressBook,
   School
 } from 'tabler-icons-react';
@@ -59,12 +59,12 @@ function NavbarLink({ icon: Icon, label, active, onClick }: NavbarLinkProps) {
 }
 
 const mockdata = [
-  { icon: Home2, label: 'Home' },
+  { icon: Home2, label: 'Home', link: '#'  },  
+  { icon: UserCircle, label: 'About', link: '' },
   { icon: BrandGithub, label: 'GitHub', link: 'https://github.com/RiderCogswell' },  
   { icon: BrandLinkedin, label: 'LinkedIn', link: 'https://www.linkedin.com/in/rider-cogswell-608086160/' },
   { icon: BrandInstagram, label: 'Instagram', link: 'https://www.instagram.com/ridercogswell/' },
   { icon: School, label: 'Resume', link: '' },
-  { icon: User, label: 'About', link: '#' },
   { icon: AddressBook, label: 'Contact', link: '' },
 ];
 

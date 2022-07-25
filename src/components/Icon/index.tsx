@@ -1,8 +1,8 @@
 import React from 'react';
-import { FidgetSpinner } from 'tabler-icons-react';
+import { Stack3 } from 'tabler-icons-react';
               
 export default function Example() {
-  return <FidgetSpinner
+  return <Stack3
     size={40}
     strokeWidth={2}
     color={'#bf4040'}
