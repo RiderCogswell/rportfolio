@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from './components/NavbarMinimal'
 import { Home } from './components/Home';
-import './index.css';
+import './assets/index.css';
 
 function App() {
   return (
