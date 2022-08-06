@@ -90,12 +90,6 @@ export default function NavbarMinimal() {
           {links}
         </Group>
       </Navbar.Section>
-      {/* <Navbar.Section>
-        <Group direction="column" align="center" spacing={0}>
-          <NavbarLink icon={SwitchHorizontal} label="Change account" />
-          <NavbarLink icon={Logout} label="Logout" />
-        </Group>
-      </Navbar.Section> */}
     </Navbar>
   );
 }
