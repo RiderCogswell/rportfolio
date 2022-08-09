@@ -5,6 +5,10 @@
   --hover-color: #a20e0e;
 }
 
+::selection {
+  background: aquamarine;
+}
+
 
 * {
   margin: 0;
@@ -55,7 +59,6 @@ body {
   text-align: center;
   font-family: "Monaco";
   margin: 0 auto;
-
   color: var(--tertiary-color);
 }
 
@@ -104,6 +107,10 @@ body {
   align-items: center;
   justify-content: space-around;
   margin: 0 10px;
+}
+
+.about {
+  color: var(--primary-color)
 }
 
 .picture {
@@ -189,6 +196,7 @@ body {
 
   .intro-to-me {
       width: 75%;
+      margin: ;
   }
 }
 

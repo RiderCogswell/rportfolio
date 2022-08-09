@@ -1,8 +1,9 @@
 import React from 'react';
-import { HeaderMiddle } from './components/HeaderMiddle'
+import { HeaderMiddle } from './components/HeaderMiddle';
+import { About } from './components/About';
+import { ContactIcons } from './components/Contact';
 import { Home } from './components/Home';
-import { About } from './components/About'
-import { ContactIcons } from './components/Contact'
+import { FooterSimple } from './components/Footer';
 import './assets/index.css';
 
 function App() {
@@ -25,6 +26,24 @@ function App() {
       <Home />
       <About />
       <ContactIcons />
+      <FooterSimple links={[
+        {
+          link: '#',
+          label: 'Contact'
+        },
+        {
+          link: '#',
+          label: 'Resume'
+        },
+        {
+          link: '',
+          label: 'Blog'
+        },
+        {
+          link: 'https://opensource.org/licenses/MIT',
+          label: 'License'
+        },
+      ]} />
     </>
   );
 }
