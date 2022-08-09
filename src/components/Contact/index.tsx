@@ -107,7 +107,7 @@ export function ContactIcons() {
           padding: theme.spacing.xl,
           borderRadius: theme.radius.md,
           backgroundImage: `linear-gradient(135deg, ${theme.colors.red[6]} 0%, ${
-            theme.colors[theme.primaryColor][4]
+            theme.colors.red[4]
           } 100%)`,
         })}
       >

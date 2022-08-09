@@ -55,12 +55,12 @@ body {
   text-align: center;
   font-family: "Monaco";
   margin: 0 auto;
-  background: var(--primary-color);
+
   color: var(--tertiary-color);
 }
 
 .rider {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .front-page {
