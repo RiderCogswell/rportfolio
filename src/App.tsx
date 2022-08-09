@@ -15,17 +15,16 @@ function App() {
           label: 'Home'
         },
         {
-          link: 'https://github.com/RiderCogswell',
-          label: 'GitHub'
+          link: '',
+          label: 'Portfolio'
         },
         {
-          link: 'https://www.linkedin.com/in/rider-cogswell-608086160/',
+          link: '',
           label: 'LinkedIn'
         },
       ]} />
       <Home />
       <About />
-      <ContactIcons />
       <FooterSimple links={[
         {
           link: '#',
