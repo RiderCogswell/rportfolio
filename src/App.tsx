@@ -10,16 +10,16 @@ function App() {
     <>
       <HeaderMiddle links={[
         {
+          link: '#',
+          label: 'Home'
+        },
+        {
           link: 'https://github.com/RiderCogswell',
           label: 'GitHub'
         },
         {
           link: 'https://www.linkedin.com/in/rider-cogswell-608086160/',
           label: 'LinkedIn'
-        },
-        {
-          link: 'https://www.instagram.com/ridercogswell/',
-          label: 'Instagram'
         },
       ]} />
       <Home />
