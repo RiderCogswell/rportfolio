@@ -58,7 +58,7 @@ body {
   text-align: center;
   text-align: center;
   font-family: "Monaco";
-  margin: 0 auto;
+  margin: 4% 250px 19%;
   color: var(--tertiary-color);
 }
 
@@ -107,6 +107,7 @@ body {
   align-items: center;
   justify-content: space-around;
   margin: 0 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .about {
@@ -124,7 +125,7 @@ body {
 
 .picture img {
   max-width: 100%;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .my-story p {
@@ -151,6 +152,10 @@ body {
 
   .intro-design h1 {
       width: 100%;
+  }
+
+  .intro-to-me {
+    margin: 0 150px;
   }
 
   .me {
@@ -196,7 +201,7 @@ body {
 
   .intro-to-me {
       width: 75%;
-      margin: ;
+      margin: 0;
   }
 }
 

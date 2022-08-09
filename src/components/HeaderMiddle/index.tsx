@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { createStyles, Header, Group, ActionIcon, Container, Burger } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons';
+import { IconBrandGithub, IconBrandYoutube, IconBrandTwitter } from '@tabler/icons';
 import { Command } from 'tabler-icons-react';
 
 const useStyles = createStyles((theme) => ({
@@ -104,10 +104,10 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
             <IconBrandTwitter size={18} stroke={1.5} />
           </ActionIcon>
           <ActionIcon size="lg">
-            <IconBrandYoutube size={18} stroke={1.5} />
+            <IconBrandGithub size={18} stroke={1.5} />
           </ActionIcon>
           <ActionIcon size="lg">
-            <IconBrandInstagram size={18} stroke={1.5} />
+            <IconBrandYoutube size={18} stroke={1.5} />
           </ActionIcon>
         </Group>
       </Container>
