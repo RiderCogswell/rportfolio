@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { createStyles, Header, Group, ActionIcon, Container, Burger } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons';
-import { MantineLogo } from '@mantine/ds';
+import { Command } from 'tabler-icons-react';
 
 const useStyles = createStyles((theme) => ({
   inner: {
@@ -97,7 +97,7 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
           {items}
         </Group>
 
-        <MantineLogo size={28} />
+        <Command size={48} />
 
         <Group spacing={0} className={classes.social} position="right" noWrap>
           <ActionIcon size="lg">

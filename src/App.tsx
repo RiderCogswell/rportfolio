@@ -10,12 +10,17 @@ function App() {
     <>
       <HeaderMiddle links={[
         {
-          link: 'https://ridercogswell.github.io/tunedin/',
+          link: 'https://github.com/RiderCogswell',
           label: 'GitHub'
         },
         {
-          link: ''
-        }
+          link: 'https://www.linkedin.com/in/rider-cogswell-608086160/',
+          label: 'LinkedIn'
+        },
+        {
+          link: 'https://www.instagram.com/ridercogswell/',
+          label: 'Instagram'
+        },
       ]} />
       <Home />
       <About />
