@@ -49,7 +49,7 @@ export function FooterSimple({ links }: FooterSimpleProps) {
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
-        <Command size={28} />
+        <Command size={32} />
         <Group className={classes.links}>{items}</Group>
       </Container>
     </div>
