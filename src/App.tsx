@@ -16,10 +16,10 @@ function App() {
         },
         {
           link: '',
-          label: 'Portfolio'
+          label: 'Projects'
         },
         {
-          link: '',
+          link: '##',
           label: 'LinkedIn'
         },
       ]} />

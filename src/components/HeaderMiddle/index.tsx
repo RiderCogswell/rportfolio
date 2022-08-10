@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { createStyles, Header, Group, ActionIcon, Container, Burger } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { IconBrandGithub, IconBrandYoutube, IconBrandTwitter } from '@tabler/icons';
+import { IconBrandTwitter, IconBrandGithub, IconBrandYoutube } from '@tabler/icons';
 import { Command } from 'tabler-icons-react';
 
 const useStyles = createStyles((theme) => ({
@@ -67,7 +67,6 @@ const useStyles = createStyles((theme) => ({
 interface HeaderMiddleProps {
   links: { link: string; label: string }[];
 }
-
 
 
 export function HeaderMiddle({ links }: HeaderMiddleProps) {
