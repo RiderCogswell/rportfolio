@@ -23,8 +23,10 @@ function App() {
           label: 'LinkedIn'
         },
       ]} />
+
       <Home />
       <About />
+      
       <FooterSimple links={[
         {
           link: '#',
