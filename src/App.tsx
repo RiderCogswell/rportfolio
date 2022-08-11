@@ -1,52 +1,67 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HeaderMiddle } from './components/HeaderMiddle';
-import { About } from './components/About';
-import { ContactIcons } from './components/Contact';
-import { Home } from './components/Home';
+import { About } from './pages/About';
+import { ContactIcons } from './pages/Contact';
+import { Home } from './pages/Home';
 import { FooterSimple } from './components/Footer';
 import './assets/index.css';
 
 function App() {
   return (
-    <>
-      <HeaderMiddle links={[
-        {
-          link: '#',
-          label: 'Home'
-        },
-        {
-          link: '',
-          label: 'Projects'
-        },
-        {
-          link: '##',
-          label: 'LinkedIn'
-        },
-      ]} />
+    <Router>
+      <>
+        <HeaderMiddle links={[
+          {
+            link: '/',
+            label: 'Home'
+          },
+          {
+            link: '',
+            label: 'Projects'
+          },
+          {
+            link: '##',
+            label: 'LinkedIn'
+          },
+        ]} />
 
-      
-        <Home />
-        <About />
-      
-      <FooterSimple links={[
-        {
-          link: '#',
-          label: 'Contact'
-        },
-        {
-          link: '#',
-          label: 'Resume'
-        },
-        {
-          link: '',
-          label: 'Blog'
-        },
-        {
-          link: 'https://opensource.org/licenses/MIT',
-          label: 'License'
-        },
-      ]} />
-    </>
+        <Routes>
+          <Route
+            path='/'
+            element={
+              <>
+                <Home />
+                <About />
+              </>
+            }
+          />
+          <Route 
+            path='/contact'
+            element={<ContactIcons />}
+          />
+        </Routes>
+
+        <FooterSimple links={[
+          {
+            link: '/contact',
+            label: 'Contact'
+          },
+          {
+            link: '#',
+            label: 'Resume'
+          },
+          {
+            link: '',
+            label: 'Blog'
+          },
+          {
+            link: 'https://opensource.org/licenses/MIT',
+            label: 'License'
+          },
+        ]} />
+      </>
+    </Router>
   );
 }
 
