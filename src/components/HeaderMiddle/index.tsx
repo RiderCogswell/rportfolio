@@ -99,13 +99,19 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
         <Command size={48} />
 
         <Group spacing={0} className={classes.social} position="right" noWrap>
-          <ActionIcon size="lg">
+          <ActionIcon size="lg" onClick={(): void => {
+            window.location.replace('https://twitter.com/riderortiz22')
+          }} >
             <IconBrandTwitter size={18} stroke={1.5} />
           </ActionIcon>
-          <ActionIcon size="lg">
+          <ActionIcon size="lg" onClick={(): void => {
+            window.location.replace('https://github.com/RiderCogswell')
+          }} >
             <IconBrandGithub size={18} stroke={1.5} />
           </ActionIcon>
-          <ActionIcon size="lg">
+          <ActionIcon size="lg" onClick={(): void => {
+            window.location.replace('https://www.youtube.com/channel/UCJB7Moei5mRIOgaSRQyeMRA')
+          }} >
             <IconBrandYoutube size={18} stroke={1.5} />
           </ActionIcon>
         </Group>
