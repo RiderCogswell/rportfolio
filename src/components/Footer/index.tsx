@@ -39,7 +39,7 @@ export function FooterSimple({ links }: FooterSimpleProps) {
       color="dimmed"
       key={link.label}
       href={link.link}
-      onClick={(event) => event.preventDefault()}
+      onClick={() => window.location.replace(link.link)}
       size="sm"
     >
       {link.label}

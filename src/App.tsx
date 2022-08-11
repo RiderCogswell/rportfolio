@@ -24,8 +24,9 @@ function App() {
         },
       ]} />
 
-      <Home />
-      <About />
+      
+        <Home />
+        <About />
       
       <FooterSimple links={[
         {
