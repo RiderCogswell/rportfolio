@@ -79,8 +79,8 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
       key={link.label}
       href={link.link}
       className={cx(classes.link, { [classes.linkActive]: active === link.link })}
-      onClick={(event) => {
-        event.preventDefault();
+      onClick={(): void => {
+        window.location.replace(link.link)
         setActive(link.link);
       }}
     >
