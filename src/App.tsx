@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { HeaderMiddle } from './components/HeaderMiddle';
 import { About } from './pages/About';
 import { ContactIcons } from './pages/Contact';
@@ -10,7 +10,7 @@ import './assets/index.css';
 function App() {
   return (
     <Router>
-      <>
+      <div>
         <HeaderMiddle links={[
           {
             link: '/',
@@ -27,7 +27,7 @@ function App() {
         ]} />
 
         <Routes>
-          <Route
+          <Route 
             path='/'
             element={
               <>
@@ -39,6 +39,10 @@ function App() {
           <Route 
             path='/contact'
             element={<ContactIcons />}
+          />
+          <Route 
+            path="/redirect"
+            element={ <Navigate replace to="/" />}
           />
         </Routes>
 
@@ -60,7 +64,7 @@ function App() {
             label: 'License'
           },
         ]} />
-      </>
+      </div>
     </Router>
   );
 }
