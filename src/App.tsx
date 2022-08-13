@@ -1,7 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HeaderMiddle } from './components/HeaderMiddle';
-import { About } from './pages/About';
+import { About } from './components/About';
 import { ContactIcons } from './pages/Contact';
 import { Home } from './pages/Home';
 import { FooterSimple } from './components/Footer';
@@ -13,11 +13,11 @@ function App() {
       <div>
         <HeaderMiddle links={[
           {
-            link: '/',
+            link: '*',
             label: 'Home'
           },
           {
-            link: '',
+            link: '.',
             label: 'Projects'
           },
           {
@@ -25,6 +25,9 @@ function App() {
             label: 'LinkedIn'
           },
         ]} />
+
+        {/* <Home />
+        <About /> */}
 
         <Routes>
           <Route 
@@ -39,10 +42,6 @@ function App() {
           <Route 
             path='/contact'
             element={<ContactIcons />}
-          />
-          <Route 
-            path="/redirect"
-            element={ <Navigate replace to="/" />}
           />
         </Routes>
 
