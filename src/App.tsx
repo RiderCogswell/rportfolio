@@ -22,7 +22,7 @@ function App() {
           },
           {
             link: 'm',
-            label: "Let's Work!"
+            label: "Let's Build!"
           },
         ]} />
 
