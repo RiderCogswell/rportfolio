@@ -21,13 +21,10 @@ function App() {
             label: 'Projects'
           },
           {
-            link: 'https://www.linkedin.com/in/rider-cogswell-608086160/',
-            label: 'LinkedIn'
+            link: 'm',
+            label: "Let's Work!"
           },
         ]} />
-
-        {/* <Home />
-        <About /> */}
 
         <Routes>
           <Route 
