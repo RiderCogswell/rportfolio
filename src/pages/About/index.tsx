@@ -5,7 +5,7 @@ export const About = (): JSX.Element => {
     <div className="me">
       <div className="my-section">
           <div className="picture">
-              <img src="/../img/IMG_0006.JPG" alt="Rider Cogswell" />
+              <img src="/img/IMG_0006.JPG" alt="Rider Cogswell" />
           </div>
       </div>
       <div className="my-story">

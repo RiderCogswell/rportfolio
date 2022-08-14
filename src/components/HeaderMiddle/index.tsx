@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { createStyles, Header, Group, ActionIcon, Container, Burger, Anchor } from '@mantine/core';
+import { createStyles, Header, Group, ActionIcon, Container, Burger } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { IconBrandTwitter, IconBrandGithub, IconBrandYoutube } from '@tabler/icons';
+import { IconBrandGithub, IconBrandYoutube, IconBrandLinkedin } from '@tabler/icons';
 import { Command } from 'tabler-icons-react';
 import { Link } from 'react-router-dom';
 
@@ -108,15 +108,17 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
 
         <Group spacing={0} className={classes.social} position="right" noWrap>
           <ActionIcon size="lg" onClick={(): void => {
-            window.location.replace('https://twitter.com/riderortiz22')
-          }} >
-            <IconBrandTwitter size={18} stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size="lg" onClick={(): void => {
             window.location.replace('https://github.com/RiderCogswell')
           }} >
             <IconBrandGithub size={18} stroke={1.5} />
           </ActionIcon>
+          
+          <ActionIcon size="lg" onClick={(): void => {
+            window.location.replace('https://www.linkedin.com/in/rider-cogswell-608086160/')
+          }} >
+            <IconBrandLinkedin size={18} stroke={1.5} />
+          </ActionIcon>
+
           <ActionIcon size="lg" onClick={(): void => {
             window.location.replace('https://www.youtube.com/channel/UCJB7Moei5mRIOgaSRQyeMRA')
           }} >
