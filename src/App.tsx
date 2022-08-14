@@ -12,10 +12,10 @@ function App() {
     <Router>
       <div>
         <HeaderMiddle links={[
-          {
-            link: '/',
-            label: 'Home'
-          },
+          // {
+          //   link: '/',
+          //   label: 'Home'
+          // },
           {
             link: '',
             label: 'Projects'

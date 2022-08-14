@@ -3,6 +3,7 @@ import { createStyles, Header, Group, ActionIcon, Container, Burger } from '@man
 import { useDisclosure } from '@mantine/hooks';
 import { IconBrandTwitter, IconBrandGithub, IconBrandYoutube } from '@tabler/icons';
 import { Command } from 'tabler-icons-react';
+import { Link } from 'react-router-dom';
 
 const useStyles = createStyles((theme) => ({
   inner: {
@@ -87,12 +88,17 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
       {link.label}
     </a>
   ));
+  console.log(classes.links);
+  
 
   return (
     <Header height={56} mb={120}>
       <Container className={classes.inner}>
         <Burger opened={opened} onClick={toggle} size="sm" className={classes.burger} />
         <Group className={classes.links} spacing={5}>
+          {<Link className='anch' to='/'>
+            Home
+          </Link>}
           {items}
         </Group>
 
