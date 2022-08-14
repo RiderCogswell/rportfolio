@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import { createStyles, Header, Group, ActionIcon, Container, Burger } from '@mantine/core';
+import { createStyles, Header, Group, ActionIcon, Container, Burger, Anchor } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconBrandTwitter, IconBrandGithub, IconBrandYoutube } from '@tabler/icons';
 import { Command } from 'tabler-icons-react';
 import { Link } from 'react-router-dom';
+
 
 const useStyles = createStyles((theme) => ({
   inner: {
@@ -89,6 +90,7 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
     </a>
   ));
   console.log(classes.links);
+
   
 
   return (
@@ -96,8 +98,9 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
       <Container className={classes.inner}>
         <Burger opened={opened} onClick={toggle} size="sm" className={classes.burger} />
         <Group className={classes.links} spacing={5}>
-          {<Link className='anch' to='/'>
-            Home
+          {<Link to='/' className='anch'>
+              Home
+  
           </Link>}
           {items}
         </Group>
