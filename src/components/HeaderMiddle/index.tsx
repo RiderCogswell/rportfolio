@@ -87,10 +87,7 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
     >
       {link.label}
     </Link>
-  ));
-  console.log(classes.links);
-
-  
+  ));  
 
   return (
     <Header height={56} mb={120}>
@@ -112,7 +109,7 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
           }} >
             <IconBrandGithub size={18} stroke={1.5} />
           </ActionIcon>
-          
+
           <ActionIcon size="lg" onClick={(): void => {
             window.location.replace('https://www.linkedin.com/in/rider-cogswell-608086160/')
           }} >
