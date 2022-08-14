@@ -46,10 +46,7 @@ function App() {
         </Routes>
 
         <FooterSimple links={[
-          {
-            link: '/contact',
-            label: 'Contact'
-          },
+
           {
             link: 'https://docs.google.com/document/d/e/2PACX-1vQkec2EgNO5frafwLyynhdEyAxXb52QBDmpJXbEsbqo-RJ8y4mvQ_hmV5R6nyp9rR-uMWLR06r-xaJK/pub',
             label: 'Resume'

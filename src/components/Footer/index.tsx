@@ -53,7 +53,7 @@ export function FooterSimple({ links }: FooterSimpleProps) {
     <div className={classes.footer}>
       <Container className={classes.inner}>
         <Command size={32} />
-        <Group className={classes.links}>{<Link to={'/contact'}><Anchor className='mantine-eg3t3k' color='dimmed' size='sm' key='Contact'>Contact</Anchor></Link>}{items}</Group>
+        <Group className={classes.links}>{<Link to={'/contact'} className='anch'><Anchor  color='dimmed' size='sm' key='Contact'>Contact</Anchor></Link>}{items}</Group>
       </Container>
     </div>
   );

@@ -29,6 +29,10 @@ body {
   overflow: hidden;
 }
 
+.anch {
+  text-decoration: none;
+}
+
 /* styling intro to me */
 
 .intro-design {
