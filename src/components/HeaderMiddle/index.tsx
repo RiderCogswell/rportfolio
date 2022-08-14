@@ -77,17 +77,16 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
   const { classes, cx } = useStyles();
 
   const items = links.map((link) => (
-    <a
+    <Link
       key={link.label}
-      href={link.link}
+      to={link.link}
       className={cx(classes.link, { [classes.linkActive]: active === link.link })}
       onClick={(): void => {
-        window.location.replace(link.link)
         setActive(link.link);
       }}
     >
       {link.label}
-    </a>
+    </Link>
   ));
   console.log(classes.links);
 
@@ -98,10 +97,10 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
       <Container className={classes.inner}>
         <Burger opened={opened} onClick={toggle} size="sm" className={classes.burger} />
         <Group className={classes.links} spacing={5}>
-          {<Link to='/' className='anch'>
+          {/* {<Link to='/' className='anch'>
               Home
   
-          </Link>}
+          </Link>} */}
           {items}
         </Group>
 

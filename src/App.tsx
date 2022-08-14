@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { HeaderMiddle } from './components/HeaderMiddle';
 import { About } from './pages/About';
 import { ContactIcons } from './pages/Contact';
@@ -12,10 +12,10 @@ function App() {
     <Router>
       <div>
         <HeaderMiddle links={[
-          // {
-          //   link: '/',
-          //   label: 'Home'
-          // },
+          {
+            link: '/',
+            label: 'Home'
+          },
           {
             link: '',
             label: 'Projects'
