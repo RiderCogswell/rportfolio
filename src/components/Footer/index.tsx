@@ -1,4 +1,5 @@
 import { createStyles, Container, Group, Anchor } from '@mantine/core';
+import { Link } from 'react-router-dom';
 import { Command } from 'tabler-icons-react';
 
 const useStyles = createStyles((theme) => ({
@@ -46,11 +47,13 @@ export function FooterSimple({ links }: FooterSimpleProps) {
     </Anchor>
   ));
 
+  console.log(classes.links);
+  
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
         <Command size={32} />
-        <Group className={classes.links}>{items}</Group>
+        <Group className={classes.links}>{<Link to={'/contact'}><Anchor className='mantine-eg3t3k' color='dimmed' size='sm' key='Contact'>Contact</Anchor></Link>}{items}</Group>
       </Container>
     </div>
   );
