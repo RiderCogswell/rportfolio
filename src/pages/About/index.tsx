@@ -1,11 +1,12 @@
 import React from 'react';
+import img from './../img/rider.JPG'
 
 export const About = (): JSX.Element => {
   return (
     <div className="me">
       <div className="my-section">
           <div className="picture">
-              <img src="/img/IMG_0006.JPG" alt="Rider Cogswell" />
+              <img src={img} alt="Rider Cogswell" />
           </div>
       </div>
       <div className="my-story">
