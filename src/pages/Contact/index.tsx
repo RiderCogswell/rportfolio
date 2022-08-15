@@ -18,8 +18,8 @@ const useStyles = createStyles((theme, { variant }: ContactIconStyles) => ({
     marginRight: theme.spacing.md,
     backgroundImage:
       variant === 'gradient'
-        ? `linear-gradient(135deg, ${theme.colors.red[4]} 0%, ${
-            theme.colors.red[6]
+        ? `linear-gradient(135deg, ${theme.colors.red} 0%, ${
+            theme.colors.red[7]
           } 100%)`
         : 'none',
     backgroundColor: 'transparent',
@@ -106,8 +106,8 @@ export function ContactIcons() {
         sx={(theme) => ({
           padding: theme.spacing.xl,
           borderRadius: theme.radius.md,
-          backgroundImage: `linear-gradient(135deg, ${theme.colors.red[6]} 0%, ${
-            theme.colors.red[4]
+          backgroundImage: `linear-gradient(135deg, ${theme.colors.red} 0%, ${
+            theme.colors.red[7]
           } 100%)`,
         })}
       >
