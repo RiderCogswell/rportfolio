@@ -4,7 +4,7 @@ import { HeaderMiddle } from './components/HeaderMiddle';
 import { FooterSimple } from './components/Footer';
 import { About } from './pages/About';
 import { ContactIcons } from './pages/Contact';
-import { Projects } from './pages/Projects';
+import { ProjectList } from './components/ProjectList';
 import { Home } from './pages/Home';
 
 import './assets/index.css';
@@ -41,7 +41,7 @@ function App() {
           />
           <Route 
             path='/projects'
-            element={<Projects />}
+            element={<ProjectList />}
           />
           <Route 
             path='/contact'
