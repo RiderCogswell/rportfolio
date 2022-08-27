@@ -1,11 +1,8 @@
 # Rider Cogswell's Portfolio!
 
-## Description
-
 Hello! My name is Rider, and I am a Software Engineer in the Bay Area who loves the web, frameworks, and talking tech! Please Follow my GitHub and always feel free to reach out!
 
   ## Table of Contents
-  - [Description](#description)
   - [License](#license)
   - [Questions](#tests)
 
