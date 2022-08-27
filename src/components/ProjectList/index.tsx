@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 
 export const ProjectList = () => {    
-    const [currentProject, setCurrentProject] = useState();
-
+    
     const projects = [
         {
             title: 'due',
@@ -52,12 +51,11 @@ export const ProjectList = () => {
         <div>
             <div className='flex-row'>
                 {projects.map((project) => (
-                    <div className="projects">
+                    <div className="projects" onClick={() => window.location.replace(project.link)}>
                         <img 
                             src={require(`../../assets/${project.image}`)}
                             alt={project.title}
                             className='img-thumbnail mx-1'
-                            onClick={() => window.location.replace(project.link)}
                             key={project.title}
                         />
                         <div className="project-bio">
