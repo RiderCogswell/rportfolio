@@ -4,6 +4,7 @@ import { useDisclosure } from '@mantine/hooks';
 import { IconBrandGithub, IconBrandYoutube, IconBrandLinkedin } from '@tabler/icons';
 import { Command } from 'tabler-icons-react';
 import { Link } from 'react-router-dom';
+import DarkMode from '../DarkMode'
 
 
 const useStyles = createStyles((theme) => ({
@@ -94,11 +95,8 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
       <Container className={classes.inner}>
         <Burger opened={opened} onClick={toggle} size="sm" className={classes.burger} />
         <Group className={classes.links} spacing={5}>
-          {/* {<Link to='/' className='anch'>
-              Home
-  
-          </Link>} */}
           {items}
+          <DarkMode />
         </Group>
 
         <Command size={48} />

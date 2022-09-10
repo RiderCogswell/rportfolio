@@ -23,10 +23,7 @@ function App() {
             link: '/projects',
             label: 'Projects'
           },
-          {
-            link: 'm',
-            label: "Let's Build!"
-          },
+
         ]} />
 
         <Routes>

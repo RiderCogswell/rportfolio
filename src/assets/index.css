@@ -9,6 +9,9 @@
   background: aquamarine;
 }
 
+.dark {
+  background-color: #292929;
+}
 
 * {
   margin: 0;
