@@ -14,35 +14,34 @@ const useStyles = createStyles((theme) => ({
     alignItems: 'center',
     height: 56,
 
-    [theme.fn.smallerThan('sm')]: {
-      justifyContent: 'flex-start',
-    },
+    // [theme.fn.smallerThan('sm')]: {
+    //   justifyContent: 'flex-start',
+    // },
   },
 
   links: {
     width: 260,
 
-    [theme.fn.smallerThan('sm')]: {
-      display: 'none',
-    },
+    // [theme.fn.smallerThan('sm')]: {
+    //   display: 'none',
+    // },
   },
 
   social: {
     width: 260,
 
-    [theme.fn.smallerThan('sm')]: {
-      width: 'auto',
-      marginLeft: 'auto',
-    },
+    // [theme.fn.smallerThan('sm')]: {
+    //   width: 65
+    // },
   },
 
-  burger: {
-    marginRight: theme.spacing.md,
+  // burger: {
+  //   marginRight: theme.spacing.md,
 
-    [theme.fn.largerThan('sm')]: {
-      display: 'none',
-    },
-  },
+  //   [theme.fn.largerThan('sm')]: {
+  //     display: 'none',
+  //   },
+  // },
 
   link: {
     display: 'block',
@@ -93,7 +92,7 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
   return (
     <Header height={56} mb={120}>
       <Container className={classes.inner}>
-        <Burger opened={opened} onClick={toggle} size="sm" className={classes.burger} />
+        {/* <Burger opened={opened} onClick={toggle} size="sm" className={classes.burger} /> */}
         <Group className={classes.links} spacing={5}>
           {items}
           <DarkMode />
