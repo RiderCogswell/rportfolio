@@ -53,6 +53,12 @@ const useStyles = createStyles((theme) => ({
     fontSize: theme.fontSizes.sm,
     fontWeight: 500,
 
+    [theme.fn.smallerThan('sm')]: {
+      fontSize: theme.fontSizes.xs,
+      borderRadius: theme.radius.xs,
+
+    },
+
     '&:hover': {
       backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
     },
@@ -95,12 +101,17 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
         {/* <Burger opened={opened} onClick={toggle} size="sm" className={classes.burger} /> */}
         <Group className={classes.links} spacing={5}>
           {items}
-          <DarkMode />
+          <ActionIcon size="lg">
+            <DarkMode />
+          </ActionIcon>
         </Group>
 
         <Command size={48} />
 
         <Group spacing={0} className={classes.social} position="right" noWrap>
+          <ActionIcon size="lg">
+            <DarkMode />
+          </ActionIcon>
           <ActionIcon size="lg" onClick={(): void => {
             window.location.replace('https://github.com/RiderCogswell')
           }} >
