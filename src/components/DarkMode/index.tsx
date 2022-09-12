@@ -14,6 +14,6 @@ export default function Button() {
   }
 
   return (
-    <button className='dark-mode-btn' onClick={toggle}>{isClicked ? "☾" : "☼"}</button>
+    <button className='dark-mode-btn' onClick={toggle}>{isClicked ? "☼" : "☾"}</button>
   )
 }
