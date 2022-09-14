@@ -132,7 +132,7 @@ body {
 }
 
 .my-story p {
-  font-size: 20px;
+  font-size: large;
   text-align: center;
   line-height: 2.3;
 }
@@ -201,6 +201,7 @@ body {
   .my-story p {
       line-height: 1.5;
       padding: 0%;
+      font-size: medium;
   }
 
   .section-title {
