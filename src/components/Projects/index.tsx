@@ -1,7 +1,7 @@
 import { Card, Text, Group, createStyles } from '@mantine/core';
 
 const useStyles = createStyles((theme, _params, getRef) => {
-  const image = 'due.png';
+  const image = getRef('image');
 
   return {
     card: {

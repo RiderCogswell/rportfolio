@@ -4,7 +4,7 @@ import { HeaderMiddle } from './components/HeaderMiddle';
 import { FooterSimple } from './components/Footer';
 import { About } from './pages/About';
 import { ContactIcons } from './pages/Contact';
-import { ProjectList } from './components/ProjectList';
+import { ProjectList } from './pages/ProjectList';
 import { Home } from './pages/Home';
 
 import './assets/index.css';
@@ -22,8 +22,7 @@ function App() {
           {
             link: '/projects',
             label: 'Projects'
-          },
-
+          }
         ]} />
 
         <Routes>
