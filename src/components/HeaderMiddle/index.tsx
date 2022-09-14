@@ -20,7 +20,6 @@ const useStyles = createStyles((theme) => ({
     width: 260,
   },
 
-
   link: {
     display: 'block',
     lineHeight: 1,
@@ -84,7 +83,7 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
   ));  
 
   return (
-    <Header height={56} mb={120}>
+    <Header height={56} mb={120} className="sticky">
       <Container className={classes.inner}>
         <Group className={classes.links} spacing={5}>
           {items}

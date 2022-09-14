@@ -9,13 +9,6 @@
   background: aquamarine;
 }
 
-.dark {
-  background-color: #292929;
-}
-
-.dark-mode-btn {
-  
-}
 
 * {
   margin: 0;
@@ -34,6 +27,17 @@ body {
 
 #0 {
   overflow: hidden;
+}
+
+/* header and footer added styles */
+
+.dark {
+  background-color: #292929;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
 }
 
 .anch {
