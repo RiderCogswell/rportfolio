@@ -93,7 +93,7 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
 
         <Group spacing={0} className={classes.social} position="right" noWrap>
           <ActionIcon size="lg" onClick={toggle} >
-            {isClicked ? <IconSun size={18} stroke={2} /> : <IconMoon size={18} stroke={2} />}
+            {isClicked ? <IconSun size={18} stroke={2} /> : <IconMoon size={18} stroke={2} />} 
           </ActionIcon>
           <ActionIcon size="lg" onClick={(): void => {
             window.location.replace('https://github.com/RiderCogswell')
