@@ -9,7 +9,6 @@
   background: aquamarine;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -38,6 +37,7 @@ span[data-descr]:hover::after {
   bottom: -50px;
   min-width: 100px;
   border: 1px #aaaaaa solid;
+  border-radius: 5px;
   background-color: #13293d;
   padding: 12px;
   color: #fff;

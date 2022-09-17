@@ -1,8 +1,20 @@
 import React from 'react';
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target
+    }
+  })
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
 export const About = (): JSX.Element => {
   return (
-    <div className="me">
+    <div className="me hidden">
       <div className="my-section">
           <div className="picture">
               <img src={require('../../assets/rider.JPG')} alt="Rider Cogswell" /> 
