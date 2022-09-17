@@ -92,7 +92,7 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
         <Command size={48} />
 
         <Group spacing={0} className={classes.social} position="right" noWrap>
-          <span data-descr={isClicked ? "Dark Mode" : "Light Mode"}>
+          <span data-descr={isClicked ? "Light Mode" : "Dark Mode"}>
             <ActionIcon size="lg" onClick={toggle} >
               {isClicked ? <IconSun size={18} stroke={2} /> : <IconMoon size={18} stroke={2} />} 
             </ActionIcon>
