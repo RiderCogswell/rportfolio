@@ -38,7 +38,7 @@ const useStyles = createStyles((theme) => ({
 
     '&:hover': {
       backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
-    },
+    }
   },
 
   linkActive: {
@@ -46,7 +46,7 @@ const useStyles = createStyles((theme) => ({
       backgroundColor: theme.colors.red[1],
       color: theme.colors.red,
     },
-  },
+  }
 }));
 
 interface HeaderMiddleProps {
@@ -92,26 +92,37 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
         <Command size={48} />
 
         <Group spacing={0} className={classes.social} position="right" noWrap>
-          <ActionIcon size="lg" onClick={toggle} >
-            {isClicked ? <IconSun size={18} stroke={2} /> : <IconMoon size={18} stroke={2} />} 
-          </ActionIcon>
-          <ActionIcon size="lg" onClick={(): void => {
-            window.location.replace('https://github.com/RiderCogswell')
-          }} >
-            <IconBrandGithub size={18} stroke={2} />
-          </ActionIcon>
+          <span data-descr={isClicked ? "Dark Mode" : "Light Mode"}>
+            <ActionIcon size="lg" onClick={toggle} >
+              {isClicked ? <IconSun size={18} stroke={2} /> : <IconMoon size={18} stroke={2} />} 
+            </ActionIcon>
+          </span>
 
-          <ActionIcon size="lg" onClick={(): void => {
-            window.location.replace('https://www.linkedin.com/in/rider-cogswell-608086160/')
-          }} >
-            <IconBrandLinkedin size={18} stroke={2} />
-          </ActionIcon>
+          <span data-descr="GitHub">
+            <ActionIcon size="lg" datatype="Github" onClick={(): void => {
+              window.location.replace('https://github.com/RiderCogswell')
+            }} >
+              <IconBrandGithub size={18} stroke={2} />
+            </ActionIcon>
+          </span>
 
-          <ActionIcon size="lg" onClick={(): void => {
+
+          <span data-descr="LinkedIn">
+            <ActionIcon size="lg" datatype="LinkedIn" onClick={(): void => {
+              window.location.replace('https://www.linkedin.com/in/rider-cogswell-608086160/')
+            }} >
+              <IconBrandLinkedin size={18} stroke={2} />
+            </ActionIcon>
+          </span>
+
+          <span data-descr="YouTube">
+            <ActionIcon size="lg" datatype="YouTube" onClick={(): void => {
             window.location.replace('https://www.youtube.com/channel/UCJB7Moei5mRIOgaSRQyeMRA')
-          }} >
-            <IconBrandYoutube size={18} stroke={2} />
-          </ActionIcon>
+            }} >
+              <IconBrandYoutube size={18} stroke={2} />
+            </ActionIcon>
+          </span>
+          
         </Group>
       </Container>
     </Header>
