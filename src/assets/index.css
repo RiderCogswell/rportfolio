@@ -69,11 +69,12 @@ body {
   transition: all 1s;
 }
 
-.hidden2 {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(100%);
-  transition: all 1s;
+.same {
+  display: flex;
+}
+
+.hidden:nth-child(2) {
+  transition-delay: 250ms;
 }
 
 .show {
@@ -219,7 +220,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .intro-design h1 {
+  .intro-design h1 { 
       font-size: 36px;
   }
 

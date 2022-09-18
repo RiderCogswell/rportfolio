@@ -16,13 +16,13 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 export const About = (): JSX.Element => {
   return (
-    <div className="me ">
+    <div className="me">
       <div className="my-section hidden">
           <div className="picture">
               <img src={require('../../assets/rider.JPG')} alt="Rider Cogswell" /> 
           </div>
       </div>
-      <div className="my-story hidden2">
+      <div className="my-story hidden">
         <p>
           Born and raised in Oak Park, Sacramento + the Tenderloin District of San Francisco, I am not your traditional Software Engineer! I have a degree in Criminal Justice and Ethnic Studies from San Francisco State University and was certified through University of California, Davis Full-Stack Software Development Bootcamp, where I became invested in solving complex real world problems! <br /> <br />Follow me on <a className='link' href='https://github.com/RiderCogswell'>GitHub!</a>
         </p>
