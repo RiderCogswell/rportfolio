@@ -64,19 +64,11 @@ body {
 
 .hidden {
   opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100%);
   transition: all 1s;
-}
-
-.hidden:nth-child(2) {
-  transition-delay: 150ms;
 }
 
 .show {
   opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
 }
 
 /* styling intro to me */
@@ -154,10 +146,6 @@ body {
 .picture {
   margin: 0 0 10px 15px;
 
-}
-
-.phone {
-  color: var(--primary-color);
 }
 
 .picture img {
