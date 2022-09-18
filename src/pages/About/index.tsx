@@ -4,9 +4,11 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry);
     if (entry.isIntersecting) {
-      entry.target
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
     }
-  })
+  });
 });
 
 const hiddenElements = document.querySelectorAll('.hidden');
@@ -14,13 +16,13 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 export const About = (): JSX.Element => {
   return (
-    <div className="me hidden">
-      <div className="my-section">
+    <div className="me">
+      <div className="my-section hidden">
           <div className="picture">
               <img src={require('../../assets/rider.JPG')} alt="Rider Cogswell" /> 
           </div>
       </div>
-      <div className="my-story">
+      <div className="my-story hidden">
         <p>
           Born and raised in Oak Park, Sacramento + the Tenderloin District of San Francisco, I am not your traditional Software Engineer! I have a degree in Criminal Justice and Ethnic Studies from San Francisco State University and was certified through University of California, Davis Full-Stack Software Development Bootcamp, where I became invested in solving complex real world problems! <br /> Follow me on GitHub!
         </p>

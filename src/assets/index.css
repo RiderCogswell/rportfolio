@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
 :root {
   --primary-color: #e29c68;
   --secondary-color: #f3f0d1;
@@ -17,7 +19,7 @@
 
 body {
   text-align: center;
-  font-family: "Monaco";
+  font-family: "Poppins", sans-serif;
   margin: 0 auto;
   color: var(--tertiary-color);
   background: var(--secondary-color);
@@ -79,7 +81,6 @@ span[data-descr]:hover::after {
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-  font-family: "Monaco";
   margin: 8% 250px 20%;
   color: var(--tertiary-color);
 }
@@ -124,7 +125,6 @@ span[data-descr]:hover::after {
   align-items: center;
   justify-content: space-around;
   margin: 0 10px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .about {
