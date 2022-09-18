@@ -8,7 +8,7 @@
 }
 
 ::selection {
-  background: aquamarine;
+  background: var(--secondary-color);
 }
 
 * {
@@ -67,10 +67,6 @@ body {
   filter: blur(5px);
   transform: translateX(-100%);
   transition: all 1s;
-}
-
-.same {
-  display: flex;
 }
 
 .hidden:nth-child(2) {
@@ -165,7 +161,7 @@ body {
 }
 
 .picture img {
-  max-width: 80%;
+  max-width: 85%;
   border-radius: 5px;
 }
 

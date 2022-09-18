@@ -10,6 +10,7 @@ const useStyles = createStyles((theme) => ({
     justifyContent: 'space-between',
     alignItems: 'center',
     height: 56,
+
   },
 
   links: {
@@ -83,7 +84,7 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
   ));  
 
   return (
-    <Header height={56} mb={120} className="sticky">
+    <Header height={56} mb={120} className={isClicked ? "sticky dark" : "sticky"}>
       <Container className={classes.inner}>
         <Group className={classes.links} spacing={5}>
           {items}
