@@ -74,7 +74,7 @@ body {
 }
 
 .hidden:nth-child(2) {
-  transition-delay: 250ms;
+  transition-delay: 150ms;
 }
 
 .show {
