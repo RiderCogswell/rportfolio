@@ -27,7 +27,7 @@ const useStyles = createStyles((theme) => ({
     padding: '8px 12px',
     borderRadius: theme.radius.sm,
     textDecoration: 'none',
-    color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.colors.gray[7],
+    color: '#808080',
     fontSize: theme.fontSizes.sm,
     fontWeight: 500,
 
@@ -54,7 +54,6 @@ interface HeaderMiddleProps {
   links: { link: string; label: string }[];
 }
 
-
 export function HeaderMiddle({ links }: HeaderMiddleProps) {
 
   const [active, setActive] = useState(links[0].link);
@@ -72,6 +71,7 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
 
   const items = links.map((link) => (
     <Link
+      color={isClicked ? 'grey' : 'black'}
       key={link.label}
       to={link.link}
       className={cx(classes.link, { [classes.linkActive]: active === link.link })}
@@ -84,7 +84,7 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
   ));  
 
   return (
-    <Header height={56} mb={120} className={isClicked ? "sticky dark" : "sticky"}>
+    <Header height={56} mb={120} className={isClicked ? "sticky dark" : "sticky"} >
       <Container className={classes.inner}>
         <Group className={classes.links} spacing={5}>
           {items}
@@ -95,7 +95,7 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
         <Group spacing={0} className={classes.social} position="right" noWrap>
           <span data-descr={isClicked ? "Light Mode" : "Dark Mode"}>
             <ActionIcon size="lg" onClick={toggle} >
-              {isClicked ? <IconSun size={18} stroke={2} /> : <IconMoon size={18} stroke={2} />} 
+              {isClicked ? <IconSun size={18} stroke={2} color='grey' /> : <IconMoon size={18} stroke={2} color='grey' />} 
             </ActionIcon>
           </span>
 
@@ -103,7 +103,7 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
             <ActionIcon size="lg" datatype="Github" onClick={(): void => {
               window.location.replace('https://github.com/RiderCogswell')
             }} >
-              <IconBrandGithub size={18} stroke={2} />
+              <IconBrandGithub size={18} stroke={2} color='grey' />
             </ActionIcon>
           </span>
 
@@ -112,7 +112,7 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
             <ActionIcon size="lg" datatype="LinkedIn" onClick={(): void => {
               window.location.replace('https://www.linkedin.com/in/rider-cogswell-608086160/')
             }} >
-              <IconBrandLinkedin size={18} stroke={2} />
+              <IconBrandLinkedin size={18} stroke={2} color='grey' />
             </ActionIcon>
           </span>
 
@@ -120,7 +120,7 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
             <ActionIcon size="lg" datatype="YouTube" onClick={(): void => {
             window.location.replace('https://www.youtube.com/channel/UCJB7Moei5mRIOgaSRQyeMRA')
             }} >
-              <IconBrandYoutube size={18} stroke={2} />
+              <IconBrandYoutube size={19} stroke={2} color='grey' />
             </ActionIcon>
           </span>
           

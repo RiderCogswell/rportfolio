@@ -25,6 +25,7 @@ const useStyles = createStyles((theme) => ({
   links: {
     [theme.fn.smallerThan('xs')]: {
       marginTop: theme.spacing.md,
+      textDecoration: 'none'
     },
   },
 }));
