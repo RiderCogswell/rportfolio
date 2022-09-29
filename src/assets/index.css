@@ -33,7 +33,7 @@ body {
 
 /* header and footer added styles */
 
-span[data-descr]:hover::before {
+/* span[data-descr]:hover::before {
   content: attr(data-descr);
   position: absolute;
   left: 80%;
@@ -57,7 +57,7 @@ span[data-descr]:hover::after {
    border-right: 26px solid #13293d;
    border-bottom: 13px solid transparent;
    margin: 13px 0 0 -25px;
-}
+} */
 
 .dark {
   background-color: #131516;
