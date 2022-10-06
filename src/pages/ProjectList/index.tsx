@@ -16,34 +16,6 @@ export const ProjectList = () => {
         //     description: 'Cmnt is a Node.js application that empowers anonymous users with a random topic that they can comment on, like, share, etc.',
         //     image: 'cmnt.png',
         //     link: 'https://cmnt-app.herokuapp.com/'
-        // },
-        // {
-        //     title: 'loople',
-        //     technologies: 'Vanilla JS, HTML, CSS, Foundation, Youtube API, The News API',
-        //     description: 'Loople is an interactive webpage that allows a user to search a topic and be given a response on the latest news, videos, and in the future, social media posts',
-        //     image: 'loople.png',
-        //     link: 'https://ridercogswell.github.io/tunedin/'
-        // },        
-        // {
-        //     title: 'Deep Thoughts',
-        //     technologies: 'GraphQL, React, Mongoose, MongoDB, Express.js, Node.js',
-        //     description: 'Social network platform allowing users, to comment, friend, post and react!',
-        //     image: 'loople.png',
-        //     link: ''
-        // },
-        // {
-        //     title: 'Food Festival',
-        //     technologies: 'Node.js, WebPack, HTML, CSS, PWA',
-        //     description: 'Website for local food festival where you can reserve tickets, check the schedule, and more!',
-        //     image: 'loople.png',
-        //     link: ''
-        // },
-        // {
-        //     title: 'Shop-Shop',
-        //     technologies: 'React, GraphQL, PWA, Mongoose, MongoDB, Express.js, Node.js, Stripe',
-        //     description: 'E-Commerce Application utilizing modern technologies.',
-        //     image: 'loople.png',
-        //     link: ''
         // }
     ];
 

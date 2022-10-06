@@ -1,7 +1,7 @@
 import { Card, Text, Group, createStyles } from '@mantine/core';
 
-const useStyles = createStyles((theme, _params, getRef) => {
-  const image = getRef('image');
+const useStyles = createStyles((theme, _params) => {
+  const image = '../../assets/due.png';
 
   return {
     card: {
@@ -67,7 +67,7 @@ interface ImageCardProps {
 }
 
 export function Projects({ image, title, technologies, link }: ImageCardProps) {
-  const { classes, } = useStyles();
+  const { classes } = useStyles();
 
   return (
     <Card
