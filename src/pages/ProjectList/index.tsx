@@ -5,7 +5,7 @@ export const ProjectList = () => {
     const projects = [
         {
             title: 'due',
-            technologies: 'React, GraohQL, Mongoose, MongoDB, Express.js, Node.js',
+            technologies: 'React, GraphQL, Mongoose, MongoDB, Express.js, Node.js',
             description: 'Modern application to help everyone track their finances with a Non-Relational databsase and smart design.',
             image: 'due.png',
             link: 'https://due-ucd.herokuapp.com/'
