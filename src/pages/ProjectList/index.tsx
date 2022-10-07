@@ -1,4 +1,5 @@
 import React from "react";
+import { SimpleGrid } from "@mantine/core";
 
 export const ProjectList = () => {    
     
@@ -20,7 +21,7 @@ export const ProjectList = () => {
     ];
 
     return(
-        <div>
+        <SimpleGrid cols={3}>
             <div className='flex-row'>
                 {projects.map((project) => (
                     <div className="projects" onClick={() => window.location.replace(project.link)}>
@@ -37,7 +38,7 @@ export const ProjectList = () => {
                     </div>
                 ))}
             </div>
-        </div>
+        </SimpleGrid>
     );
 };
 
