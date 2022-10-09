@@ -54,9 +54,7 @@ export function FooterSimple({ links }: FooterSimpleProps) {
         <Command size={32} />
         <Group className={classes.links}>{
           <Link to={'/contact'} className={classes.links} color='dimmed' key='Contact'>
-
               Contact
-
           </Link>}
           {items}
         </Group>
