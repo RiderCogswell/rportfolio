@@ -53,7 +53,7 @@ export function FooterSimple({ links }: FooterSimpleProps) {
       <Container className={classes.inner}>
         <Command size={32} />
         <Group className={classes.links}>{
-          <Anchor href={document.location.hostname === 'localhost' || '127.0.0.1' ? 'localhost/#/contact' : 'https://ridercogswell.github.io/rportfolio/#/contact'} 
+          <Anchor href={document.location.hostname === 'localhost' || '127.0.0.1' ? '/#/contact' : 'https://ridercogswell.github.io/rportfolio/#/contact'} 
             className={classes.links} color='dimmed' key='Contact' size='sm'>
               Contact
           </Anchor>}
