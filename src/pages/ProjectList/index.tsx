@@ -1,5 +1,5 @@
 import React from "react";
-import { SimpleGrid, Image, Text } from "@mantine/core";
+import { SimpleGrid, Image } from "@mantine/core";
 
 export const ProjectList = () => {    
     
@@ -58,12 +58,11 @@ export const ProjectList = () => {
                         className='img-thumbnail mx-1'
                         key={project.title}
                         radius='md'
-                        caption={project.technologies}
                     />
-                    {/* <div className="project-bio">
-                        <h3 className="project-name">{project.title}</h3>
-                        <h4 className="project-bio">{project.technologies}</h4>
-                    </div> */}
+                    <div className="project-bio">
+                        <h4>{project.title}</h4>
+                        <p>{project.technologies}</p>
+                    </div>
                 </div>   
                 
             ))}

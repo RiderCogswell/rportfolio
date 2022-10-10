@@ -24,7 +24,6 @@
 body {
   text-align: center;
   font-family: "Poppins", sans-serif;
-  margin: 0 auto;
   color: var(--tertiary-color);
   background: var(--secondary-color);
   background: 100%;  
@@ -176,6 +175,13 @@ span[data-descr]:hover::after {
   color: var(--primary-color);
 }
 
+.project-bio {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  color: var(--tertiary-color);
+}
+
 /* media queries */
 
 @media screen and (max-width: 1000px) {
@@ -260,11 +266,5 @@ span[data-descr]:hover::after {
   .intro-to-me {
       width: 75%;
       margin: 0;
-  }
-}
-
-@media (prefers-reduced-motion) {
-  .hidden {
-    transition: none
   }
 }
