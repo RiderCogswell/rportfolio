@@ -1,5 +1,5 @@
 import React from "react";
-import { SimpleGrid, Image } from "@mantine/core";
+import { SimpleGrid, Image, Anchor } from "@mantine/core";
 
 export const ProjectList = () => {    
     
@@ -64,7 +64,7 @@ export const ProjectList = () => {
     return(
         <SimpleGrid cols={3}>
             {projects.map((project) => (
-                <div onClick={() => window.location.replace(project.link)}  >
+                <Anchor href={project.link} color='dimmed' >
                     <Image 
                         src={require(`../../assets/${project.image}`)}
                         alt={project.title}
@@ -72,11 +72,11 @@ export const ProjectList = () => {
                         key={project.title}
                         radius='md'
                     />
-                    <div className="project-bio">
-                        <h4>{project.title}</h4>
+                    <div className="project-bio link">
+                        <h4 style={{color: 'var(--tertiary-color)'}}>{project.title}</h4>
                         <p>{project.technologies}</p>
                     </div>
-                </div>   
+                </Anchor>   
                 
             ))}
         </SimpleGrid>
