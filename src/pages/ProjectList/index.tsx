@@ -45,7 +45,21 @@ export const ProjectList = () => {
             description: 'E-Commerce Application utilizing modern technologies.',
             image: 'loople.png',
             link: ''
-        }
+        },
+        {
+            title: 'Shop-Shop',
+            technologies: 'React, GraphQL, PWA, Mongoose, MongoDB, Express.js, Node.js, Stripe',
+            description: 'E-Commerce Application utilizing modern technologies.',
+            image: 'loople.png',
+            link: ''
+        },
+        {
+            title: 'Shop-Shop',
+            technologies: 'React, GraphQL, PWA, Mongoose, MongoDB, Express.js, Node.js, Stripe',
+            description: 'E-Commerce Application utilizing modern technologies.',
+            image: 'loople.png',
+            link: ''
+        },
     ];
 
     return(
