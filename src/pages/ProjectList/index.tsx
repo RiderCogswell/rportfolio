@@ -62,7 +62,7 @@ export const ProjectList = () => {
     ];
 
     return(
-        <SimpleGrid cols={3} style={{margin: 'space-around'}}>
+        <SimpleGrid cols={3}>
             {projects.map((project) => (
                 <div onClick={() => window.location.replace(project.link)}  >
                     <Image 
