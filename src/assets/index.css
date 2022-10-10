@@ -177,9 +177,6 @@ span[data-descr]:hover::after {
 
 .project-bio {
   text-align: center;
-  font-family: "Poppins", sans-serif;
-  margin: 0 auto;
-  color: var(--tertiary-color);
 }
 
 /* media queries */
