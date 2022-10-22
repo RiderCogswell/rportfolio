@@ -36,6 +36,7 @@ interface FooterSimpleProps {
 
 export function FooterSimple({ links }: FooterSimpleProps) {
   const { classes } = useStyles();
+  
   const items = links.map((link) => (
     <Anchor<'a'>
       color="dimmed"
@@ -53,8 +54,8 @@ export function FooterSimple({ links }: FooterSimpleProps) {
       <Container className={classes.inner}>
         <Command size={32} />
         <Group className={classes.links}>
-          <Anchor href={'https://ridercogswell.github.io/rportfolio/#/contact'} 
-            className={classes.links} color='dimmed' key='Contact' size='sm'>
+          <Anchor href={window.location.hostname === 'localhost' || '127.0.0.1' ? '/#/contact' : 'https://ridercogswell.github.io/rportfolio/#/contact'} 
+            color='dimmed' key='Contact' size='sm'>
               Contact
           </Anchor>
           {items}

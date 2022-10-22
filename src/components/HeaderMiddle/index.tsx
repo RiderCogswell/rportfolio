@@ -10,7 +10,6 @@ const useStyles = createStyles((theme) => ({
     justifyContent: 'space-between',
     alignItems: 'center',
     height: 56,
-
   },
 
   links: {
@@ -64,7 +63,7 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
 
     let element = document.body;
 
-    element.classList.toggle('dark');
+    element.classList.toggle('dark');  
 
     setIsClicked(isClicked => !isClicked)
   }
