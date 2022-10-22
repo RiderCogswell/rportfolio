@@ -33,7 +33,6 @@ const useStyles = createStyles((theme) => ({
     [theme.fn.smallerThan('sm')]: {
       fontSize: theme.fontSizes.xs,
       borderRadius: theme.radius.xs,
-
     },
 
     '&:hover': {
@@ -83,7 +82,7 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
   ));  
 
   return (
-    <Header height={56} mb={120} className={isClicked ? "sticky dark" : "sticky"} >
+    <Header height={56} mb={120} className={isClicked ? "sticky dark" : "sticky"} style={isClicked ? {borderBottom: '1px solid #e9ecef', marginBottom: '120px'} : {borderBottom: '1px solid #e9ecef', marginBottom: '120px'}}>
       <Container className={classes.inner}>
         <Group className={classes.links} spacing={5}>
           {items}
