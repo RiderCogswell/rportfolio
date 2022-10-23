@@ -62,14 +62,26 @@ export const ProjectList = () => {
     ];
 
     return(
-        <SimpleGrid cols={3}      
-             breakpoints={[
-            { maxWidth: 980, cols: 3, spacing: 'md' },
-            { maxWidth: 755, cols: 2, spacing: 'sm' },
-            { maxWidth: 600, cols: 1, spacing: 'sm' },
-        ]}>
+        <SimpleGrid 
+            spacing='xl'      
+            breakpoints={[
+                { minWidth: 'sm', cols: 2 },
+                { minWidth: 'md', cols: 3 },
+                { minWidth: 1200, cols: 4 },
+            ]}
+        >
             {projects.map((project) => (
-                <Anchor href={project.link} color='dimmed' >
+                <Anchor 
+                    href={project.link} 
+                    color='dimmed' 
+                    target='_blank'
+                >
+                    <h2 
+                        className="link" 
+                        style={{color: 'var(--tertiary-color)', marginBottom: '25px'}}
+                    >
+                        {project.title}
+                    </h2>
                     <Image 
                         src={require(`../../assets/${project.image}`)}
                         alt={project.title}
@@ -77,12 +89,13 @@ export const ProjectList = () => {
                         key={project.title}
                         radius='md'
                     />
-                    <div className="project-bio link">
-                        <h4 style={{color: 'var(--tertiary-color)'}}>{project.title}</h4>
+                    <div 
+                        className="project-bio link" 
+                        style={{marginTop: '25px'}}
+                    >
                         <p>{project.technologies}</p>
                     </div>
-                </Anchor>   
-                
+                </Anchor>             
             ))}
         </SimpleGrid>
     );
