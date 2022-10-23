@@ -41,7 +41,7 @@ export function FooterSimple({ links }: FooterSimpleProps) {
       color="dimmed"
       key={link.label}
       href={link.link}
-      onClick={() => window.location.replace(link.link)}
+      target="_blank"
       size="sm"
     >
       {link.label}
@@ -53,7 +53,7 @@ export function FooterSimple({ links }: FooterSimpleProps) {
       <Container className={classes.inner}>
         <Command size={32} />
         <Group className={classes.links}>
-          <Anchor href={window.location.hostname === 'localhost' || '127.0.0.1' ? '/#/contact' : 'https://ridercogswell.github.io/rportfolio/#/contact'} 
+          <Anchor href={window.location.hostname === 'localhost'  ? '/#/contact' : 'https://ridercogswell.github.io/rportfolio/#/contact'} 
             color='dimmed' key='Contact' size='sm'>
               Contact
           </Anchor>

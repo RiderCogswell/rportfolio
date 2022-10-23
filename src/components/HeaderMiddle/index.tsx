@@ -99,7 +99,7 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
 
           <span data-descr="GitHub">
             <ActionIcon size="lg" datatype="Github" onClick={(): void => {
-              window.location.replace('https://github.com/RiderCogswell')
+              window.open('https://github.com/RiderCogswell', '_blank')
             }} >
               <IconBrandGithub size={18} stroke={2} color='grey' />
             </ActionIcon>
@@ -108,7 +108,7 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
 
           <span data-descr="LinkedIn">
             <ActionIcon size="lg" datatype="LinkedIn" onClick={(): void => {
-              window.location.replace('https://www.linkedin.com/in/rider-cogswell-608086160/')
+              window.open('https://www.linkedin.com/in/rider-cogswell-608086160/', '_blank')
             }} >
               <IconBrandLinkedin size={18} stroke={2} color='grey' />
             </ActionIcon>
@@ -116,7 +116,7 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
 
           <span data-descr="YouTube">
             <ActionIcon size="lg" datatype="YouTube" onClick={(): void => {
-            window.location.replace('https://www.youtube.com/channel/UCJB7Moei5mRIOgaSRQyeMRA')
+            window.open('https://www.youtube.com/channel/UCJB7Moei5mRIOgaSRQyeMRA', '_blank')
             }} >
               <IconBrandYoutube size={19} stroke={2} color='grey' />
             </ActionIcon>
