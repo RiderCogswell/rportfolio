@@ -49,7 +49,9 @@ export function FooterSimple({ links }: FooterSimpleProps) {
   ));
   
   return (
-    <div>
+    <div
+      style={{marginTop: '120px'}}
+    >
       <Container className={classes.inner}>
         <Command size={32} />
         <Group className={classes.links}>
