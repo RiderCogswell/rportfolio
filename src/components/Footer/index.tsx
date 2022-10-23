@@ -1,6 +1,5 @@
 import { createStyles, Container, Group, Anchor } from '@mantine/core';
 import { Command } from 'tabler-icons-react';
-import { useState } from 'react';
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -36,7 +35,7 @@ interface FooterSimpleProps {
 
 export function FooterSimple({ links }: FooterSimpleProps) {
   const { classes } = useStyles();
-  
+
   const items = links.map((link) => (
     <Anchor<'a'>
       color="dimmed"
@@ -50,7 +49,7 @@ export function FooterSimple({ links }: FooterSimpleProps) {
   ));
   
   return (
-    <div style={{borderTop: '1px solid #353a3c', marginTop: '120px'}}>
+    <div>
       <Container className={classes.inner}>
         <Command size={32} />
         <Group className={classes.links}>
