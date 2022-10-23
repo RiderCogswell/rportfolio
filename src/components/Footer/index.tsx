@@ -1,6 +1,6 @@
 import { createStyles, Container, Group, Anchor } from '@mantine/core';
-import { Link } from 'react-router-dom';
 import { Command } from 'tabler-icons-react';
+import { useState } from 'react';
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -50,7 +50,7 @@ export function FooterSimple({ links }: FooterSimpleProps) {
   ));
   
   return (
-    <div style={{ borderTop: '1px solid #e9ecef', marginTop: '75px' }}>
+    <div style={{borderTop: '1px solid #353a3c', marginTop: '120px'}}>
       <Container className={classes.inner}>
         <Command size={32} />
         <Group className={classes.links}>
