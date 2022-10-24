@@ -24,7 +24,7 @@ export const About = (): JSX.Element => {
       </div>
       <div className="my-story">
         <p>
-          Born and raised in Oak Park, Sacramento + the Tenderloin District of San Francisco, I am not your traditional Software Engineer! I have a degree in Criminal Justice and Ethnic Studies from San Francisco State University and was certified through University of California, Davis Full-Stack Software Development Bootcamp, where I became invested in solving complex real world problems! <br /> <br />Follow me on <a className='link' href='https://github.com/RiderCogswell'>GitHub!</a>
+          Born and raised in Oak Park, Sacramento + the Tenderloin District of San Francisco, I am not your traditional Software Engineer! I have a degree in Criminal Justice and Ethnic Studies from San Francisco State University and was certified through University of California, Davis Full-Stack Software Development Bootcamp, where I became invested in solving complex real world problems! <br /> <br />Follow me on <a rel='noreferrer' className='link' href='https://github.com/RiderCogswell' target='_blank'>GitHub!</a>
         </p>
       </div>       
     </div>
