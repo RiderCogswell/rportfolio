@@ -91,13 +91,13 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
         <Command size={48} />
 
         <Group spacing={0} className={classes.social} position="right" noWrap>
-          <span data-descr={isClicked ? "Light Mode" : "Dark Mode"}>
+          <span title={isClicked ? "Light Mode" : "Dark Mode"}>
             <ActionIcon size="lg" onClick={toggle} >
               {isClicked ? <IconSun size={18} stroke={2} color='grey' /> : <IconMoon size={18} stroke={2} color='grey' />} 
             </ActionIcon>
           </span>
 
-          <span data-descr="GitHub">
+          <span title="GitHub" >
             <ActionIcon size="lg" datatype="Github" onClick={(): void => {
               window.open('https://github.com/RiderCogswell', '_blank')
             }} >
@@ -106,7 +106,7 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
           </span>
 
 
-          <span data-descr="LinkedIn">
+          <span title="LinkedIn">
             <ActionIcon size="lg" datatype="LinkedIn" onClick={(): void => {
               window.open('https://www.linkedin.com/in/rider-cogswell-608086160/', '_blank')
             }} >
@@ -114,7 +114,7 @@ export function HeaderMiddle({ links }: HeaderMiddleProps) {
             </ActionIcon>
           </span>
 
-          <span data-descr="YouTube">
+          <span title="YouTube">
             <ActionIcon size="lg" datatype="YouTube" onClick={(): void => {
             window.open('https://www.youtube.com/channel/UCJB7Moei5mRIOgaSRQyeMRA', '_blank')
             }} >

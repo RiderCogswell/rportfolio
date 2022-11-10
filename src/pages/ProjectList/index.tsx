@@ -47,18 +47,12 @@ export const ProjectList = () => {
             link: ''
         },
         {
-            title: 'Shop-Shop',
+            title: 'Shop-Shopa',
             technologies: 'React, GraphQL, PWA, Mongoose, MongoDB, Express.js, Node.js, Stripe',
 
             image: 'loople.png',
             link: ''
-        },
-        {
-            title: 'Shop-Shop',
-            technologies: 'React, GraphQL, PWA, Mongoose, MongoDB, Express.js, Node.js, Stripe',
-            image: 'loople.png',
-            link: ''
-        },
+        }
     ];
 
     return(
@@ -75,6 +69,7 @@ export const ProjectList = () => {
                     href={project.link} 
                     color='dimmed' 
                     target='_blank'
+                    key={project.title}
                 >
                     <h2 
                         className="link" 
@@ -86,6 +81,7 @@ export const ProjectList = () => {
                         src={require(`../../assets/${project.image}`)}
                         alt={project.title}
                         className='img-thumbnail mx-1'
+                        style={{borderRadius: '2px'}}
                         key={project.title}
                         radius='md'
                     />
