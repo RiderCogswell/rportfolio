@@ -11,11 +11,14 @@ export const Home = (): JSX.Element => {
   return(
       <section className='intro-design'>
         <div className='intro-to-me'>
-          <h1 id='about' className='header'>Hi, I'm <span className='rider'>Rider</span></h1>
+          <h1 className='header'>Hi, I'm <span className='rider' id='about'>Rider</span></h1>          
+          
           <p className='intro'>
-            I'm a Full-Stack Software Engineer with interests in <span>{text}</span><Cursor /> 
+            Full-Stack Software Engineer with interests in <span>{text}</span><Cursor /> 
           </p>
         </div>  
+
+        
       </section>
   );
 };

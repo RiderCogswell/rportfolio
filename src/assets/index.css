@@ -71,12 +71,15 @@ body {
 }
 
 .intro-to-me {
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
   margin: 8% 250px 20%;
   color: var(--tertiary-color);
+}
+
+.intro-to-me p {
+  max-width: 550px;
 }
 
 .rider {
@@ -161,13 +164,13 @@ body {
 @media screen and (max-width: 980px) {
 
   .intro-design {
-      align-content: center;
-      justify-content: center;
-      text-align: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .intro-design h1 {
-      width: 100%;
+    width: 100%;
   }
 
   .intro-to-me {
@@ -181,39 +184,39 @@ body {
   }
 
   .me {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .picture {
-      margin: 0 5px 30px 5px;
+    margin: 0 5px 30px 5px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .intro-design h1 { 
-      font-size: 36px;
+    font-size: 36px;
   }
 
   .intro {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .section-title {
-      font-size: 36px;
+    font-size: 36px;
   }
 }
 
 @media screen and (max-width: 575px) {
   .intro-design h1 {
-      font-size: 40px;
+    font-size: 40px;
   }
 
   .intro-design {
-    margin: 60% auto 90% auto;
+    margin: 60% auto 140% auto;
   }
 
   .intro {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .picture img {
@@ -235,4 +238,14 @@ body {
       width: 75%;
       margin: 0;
   }
+}
+
+@media screen and (max-width: 480px) {
+  .intro {
+    font-size: 16px;
+  }
+  .intro-to-me p {
+    min-width: 300px;
+  }
+
 }
