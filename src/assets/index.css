@@ -26,11 +26,13 @@ body {
   font-family: "Poppins", sans-serif;
   color: var(--tertiary-color);
   background: var(--secondary-color);
-  background: 100%;  
+  background: 100%;    
+  transition: background-color 250ms;
 }
 
 .dark {
   background-color: #131516;
+
 }
 
 .sticky {
